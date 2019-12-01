@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>ROCK PAPER SCISSORS</title>
+        <link rel="stylesheet" href="./styles/main.style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
-            <form>
-                    <input type="radio" name="gender" value="male" checked> Male<br>
-                    <input type="radio" name="gender" value="female"> Female<br>
-                    <input type="radio" name="gender" value="other"> Other
-                    <button >Play!</button>
-            </form>
-        <script src="./script.js"></script>
+        
+        <img id="background" src="./media/background.gif"/>
+        <audio id="music" autoplay loop>
+            <source src="./media/backgroundAudio.mp3" type="audio/mpeg">
+        </audio>
+        <h1>welcome to rock paper scissors!</h1>
+        <div id="theGame">
+            
+            <p>Pick your Choice Wisely!</p>
+            <p id="credit">game and design by SpaYco</p>
+            <a href="#" onclick="playMusic();" ><img id="musicBtn" src="./media/soundOff.png"></a>
+        <div id="buttons">
+            <a href="#" id="rock" onclick="browserGame('rock')"><img class="Btn" src="./media/rock.png"></a>
+            <a href="#" id="paper" onclick="browserGame('paper')"><img class="Btn" src="./media/paper.png"></a>
+            <a href="#" id="scissors" onclick="browserGame('scissors')"><img class="Btn" src="./media/scissors.png"></a>
+        </div>
+            <p id="answer">Good Luck!</p>
+        </div>
+            
+        <script src="./scripts/main.script.js"></script>
+        <script src="./scripts/game.js"></script>
     </body>
 </html>
