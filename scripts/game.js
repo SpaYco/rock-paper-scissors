@@ -31,6 +31,7 @@ function playRound(playerChoice){
         currentGame = "draw";
         return `it's a draw! you both chose ${player}`;
     }else if ((player == "rock" && computer == "scissors") || (player == "paper" && computer == "rock") || (player == "scissors" && computer == "paper")){
+        humanScore++;
         currentGame = "won";
         return `good job! ${player} beats ${computer}`;
     }else if (player != "rock" && player != "paper" && player!= "scissors"){
